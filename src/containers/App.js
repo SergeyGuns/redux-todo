@@ -7,15 +7,15 @@ import Todo from './Todo'
 const App = () => (  
   <div>
     <header>
-      <Link to="/">Home</Link>
+      <Link to="/home">Home</Link>
       <Link to="/about-us">About</Link> 
-      <Link to="/todo">Todo</Link> 
+      <Link to="/">Todo</Link> 
     </header>
 
     <main>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
       <Route exact path="/about-us" component={About} />
-      <Route exact path="/todo" component={Todo} />
+      <Route exact path="/" component={Todo} />
     </main>
   </div>
 )
